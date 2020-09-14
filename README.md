@@ -5,6 +5,5 @@
 - 每个教室的课表查询
 - 期末教室座位查询
 
-note:
-app 不收集任何个人信息，仅需要定位功能填写平安复旦
-如有信息泄露等情况，本人概不负责
+#### Caution
+Please do not use this app if you can't guarantee your phone's security. Please do not enter your account password on someone else's mobile phone. Please assess the risk yourself. The author does not collect any user information, and the author is not responsible for the loss caused by the app.
