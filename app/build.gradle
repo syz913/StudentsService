@@ -36,4 +36,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     implementation 'com.github.dfqin:grantor:2.1.0'
+    implementation 'com.just.agentweb:agentweb-androidx:4.1.4'
 }
