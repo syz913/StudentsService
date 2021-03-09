@@ -1,24 +1,25 @@
-package com.example.myapplication.ui.schoolbus;
+package com.stu.service.ui.examseat;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebSettings;
 import android.widget.LinearLayout;
 
-import com.example.myapplication.R;
+import com.stu.service.R;
 import com.just.agentweb.AgentWeb;
 
 import androidx.fragment.app.Fragment;
 
-public class SchoolBusFragment extends Fragment {
+public class ExamSeatFragment extends Fragment {
 
     private AgentWeb mAgentWeb;
-    private String url = "https://syz913.gitee.io/busschedule/";
+    private String url = "http://10.64.130.6/exam.asp";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_gallery, container, false);
+        return inflater.inflate(R.layout.fragment_examseat, container, false);
     }
 
     @Override
@@ -30,5 +31,8 @@ public class SchoolBusFragment extends Fragment {
                 .createAgentWeb()
                 .ready()
                 .go(url);
+        WebSettings settings = mAgentWeb.getAgentWebSettings().getWebSettings();
+        settings.setUseWideViewPort(true);
+        settings.setLoadWithOverviewMode(true);
     }
 }

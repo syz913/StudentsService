@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.home;
+package com.stu.service.ui.home;
 
 import android.Manifest;
 import android.content.Intent;
@@ -9,11 +9,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.example.myapplication.R;
+import com.stu.service.R;
 import com.github.dfqin.grantor.PermissionListener;
 import com.github.dfqin.grantor.PermissionsUtil;
 import com.just.agentweb.AgentWeb;
@@ -36,7 +35,7 @@ public class HomeFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-//        requestLocation();
+        requestLocation();
         mAgentWeb = AgentWeb.with(this)
                 .setAgentWebParent((LinearLayout) view, new LinearLayout.LayoutParams(-1, -1))
                 .useDefaultIndicator()

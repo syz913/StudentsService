@@ -1,26 +1,27 @@
-package com.example.myapplication.ui.slideshow;
+package com.stu.service.ui.coursetable;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
-import com.example.myapplication.R;
+import com.stu.service.R;
 import com.just.agentweb.AgentWeb;
-import com.just.agentweb.IAgentWebSettings;
 
 import androidx.fragment.app.Fragment;
 
-public class SlideshowFragment extends Fragment {
+public class CourseTableFragment extends Fragment {
 
     private AgentWeb mAgentWeb;
-    private String url = "http://10.64.130.6/exam.asp";
+    private String url = "http://10.64.130.6/";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_slideshow, container, false);
+        return inflater.inflate(R.layout.fragment_coursetable, container, false);
     }
 
     @Override
